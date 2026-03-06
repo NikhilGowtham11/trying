@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE GYM | OFFLINE SESSIONS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <div class="logo">CORE<span>GYM</span></div>
+    <button id="sync-btn">OFFLINE SYNC</button>
+</nav>
+
+<div class="container">
+
+    <section class="workout-section">
+        <div class="section-header"><h2>01. FACE WORKOUTS (10 MIN)</h2></div>
+        
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('f1')">Big Smile Hold <span>15 reps (5s hold)</span></button>
+            <div id="f1" class="v-container"><video controls loop><source src="vids/face1.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('f2')">Cheek Puff <span>30 sec × 3</span></button>
+            <div id="f2" class="v-container"><video controls loop><source src="vids/face2.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('f3')">Fish Face <span>10 sec hold × 10</span></button>
+            <div id="f3" class="v-container"><video controls loop><source src="vids/face3.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('f4')">Jawline Lift (Ceiling Kiss) <span>15 reps</span></button>
+            <div id="f4" class="v-container"><video controls loop><source src="vids/face4.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('f5')">Tongue to Roof Press <span>10 reps (5s hold)</span></button>
+            <div id="f5" class="v-container"><video controls loop><source src="vids/face5.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('f6')">Neck Stretch <span>10 reps each side</span></button>
+            <div id="f6" class="v-container"><video controls loop><source src="vids/face6.mp4"></video></div>
+        </div>
+    </section>
+
+    <section class="workout-section">
+        <div class="section-header"><h2>02. MAIN STRENGTH & FAT LOSS</h2></div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b1')">Push-ups <span>4 × 12</span></button>
+            <div id="b1" class="v-container"><video controls loop><source src="vids/body1.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b2')">Squats <span>4 × 15</span></button>
+            <div id="b2" class="v-container"><video controls loop><source src="vids/body2.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b3')">Lunges <span>3 × 12 each leg</span></button>
+            <div id="b3" class="v-container"><video controls loop><source src="vids/body3.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b4')">Glute Bridges <span>3 × 15</span></button>
+            <div id="b4" class="v-container"><video controls loop><source src="vids/body4.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b5')">Plank <span>3 × 40 sec</span></button>
+            <div id="b5" class="v-container"><video controls loop><source src="vids/body5.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b6')">Mountain Climbers <span>3 × 25</span></button>
+            <div id="b6" class="v-container"><video controls loop><source src="vids/body6.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b7')">Leg Raises <span>3 × 12</span></button>
+            <div id="b7" class="v-container"><video controls loop><source src="vids/body7.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('b8')">Burpees <span>3 × 10</span></button>
+            <div id="b8" class="v-container"><video controls loop><source src="vids/body8.mp4"></video></div>
+        </div>
+    </section>
+
+    <section class="workout-section">
+        <div class="section-header"><h2>03. PELVIC & BANANA STRENGTH</h2></div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('p1')">Kegel Exercises <span>15 reps × 3 (5s hold)</span></button>
+            <div id="p1" class="v-container"><video controls loop><source src="vids/pelvic1.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('p2')">Glute Bridge Hold <span>20 sec × 3</span></button>
+            <div id="p2" class="v-container"><video controls loop><source src="vids/pelvic2.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('p3')">Deep Squat Hold <span>30 sec × 3</span></button>
+            <div id="p3" class="v-container"><video controls loop><source src="vids/pelvic3.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('p4')">Butterfly Stretch <span>30 sec × 3</span></button>
+            <div id="p4" class="v-container"><video controls loop><source src="vids/pelvic4.mp4"></video></div>
+        </div>
+    </section>
+
+    <section class="workout-section">
+        <div class="section-header"><h2>04. CARDIO (FAT BURN)</h2></div>
+        <div class="ex-group"><button class="ex-btn no-icon">Skipping <span>10 min</span></button></div>
+        <div class="ex-group"><button class="ex-btn no-icon">Running / Fast Walking <span>20 min</span></button></div>
+        
+        <p style="color: #666; margin: 15px 0;">ALTERNATIVE (SAME SPOT):</p>
+        
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('c1')">High Knees Running <span>30 sec × 10</span></button>
+            <div id="c1" class="v-container"><video controls loop><source src="vids/cardio1.mp4"></video></div>
+        </div>
+
+        <div class="ex-group">
+            <button class="ex-btn" onclick="toggle('c2')">Jumping Jacks <span>30 sec × 10</span></button>
+            <div id="c2" class="v-container"><video controls loop><source src="vids/cardio2.mp4"></video></div>
+        </div>
+
+        <div class="ex-group"><button class="ex-btn no-icon">Spot Jogging <span>5–10 min</span></button></div>
+    </section>
+
+</div>
+
+<script>
+    function toggle(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
