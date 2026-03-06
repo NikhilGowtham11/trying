@@ -8,6 +8,13 @@
     <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(() => console.log("Offline Mode Active!"))
+      .catch(err => console.log("Offline Mode Failed!", err));
+  }
+</script>
 <body>
 
 <nav>
@@ -149,4 +156,5 @@
 </script>
 
 </body>
+
 </html>
